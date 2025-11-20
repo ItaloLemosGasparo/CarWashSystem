@@ -56,13 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Winforms\Login.cs">
+    <Compile Include="src\App\Winforms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Winforms\Login.Designer.cs">
+    <Compile Include="src\App\Winforms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,7 +73,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
+    <None Include="Docs\README.md" />
+    <None Include="src\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,13 +86,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="src\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Domain\Entities\Configurations\" />
-    <Folder Include="Domain\Enums\" />
-    <Folder Include="Services\" />
+    <Folder Include="Docs\Files\" />
+    <Folder Include="src\Domain\Entities\Configurations\" />
+    <Folder Include="src\Domain\Enums\" />
+    <Folder Include="src\Domain\Services\" />
+    <Folder Include="src\Infrastructure\Data\Context\" />
+    <Folder Include="src\Infrastructure\External\" />
     <Folder Include="Tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

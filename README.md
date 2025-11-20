@@ -17,6 +17,9 @@ Criar uma aplicação desktop utilizando Windows Forms, com persistência de dados 
 
 O projeto acaba de ser iniciado e ainda será atualizado.
 
+Current Diagram
+![Current Diagram](CarWashSystem/Docs/Files/Diagram.jpg)
+
 ## Estrutura Inicial (planejada)
 
 - src/ – Código-fonte da aplicação

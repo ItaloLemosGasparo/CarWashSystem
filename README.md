@@ -5,8 +5,8 @@ Este repositório contém uma aplicação baseada em Windows Forms, utilizando .NET 
 ## Tecnologias Principais
 
 - .NET Framework 4.8
-- Windows Forms
-- Entity Framework 6 (EF6)
+	- Windows Forms
+- Entity Framework 6 (Package Manager Console: Install-Package EntityFramework) 
 - SQL Server (cloud)
 
 ## Objetivo do Projeto
@@ -18,7 +18,7 @@ Criar uma aplicação desktop utilizando Windows Forms, com persistência de dados 
 O projeto acaba de ser iniciado e ainda será atualizado.
 
 Current Diagram
-![Current Diagram](CarWashSystem/Docs/Files/UmlDiagram.jpg)
+![Current Diagram](CarWashSystem/Docs/Files/Diagram.jpg)
 
 ## Estrutura Inicial (planejada)
 

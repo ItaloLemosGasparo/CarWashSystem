@@ -62,6 +62,20 @@
     <Compile Include="src\App\Winforms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Domain\Entities\BaseEntity.cs" />
+    <Compile Include="src\Domain\Entities\Client.cs" />
+    <Compile Include="src\Domain\Entities\Payments.cs" />
+    <Compile Include="src\Domain\Entities\Phone\ClientPhone.cs" />
+    <Compile Include="src\Domain\Entities\Phone\UserPhone.cs" />
+    <Compile Include="src\Domain\Entities\Service\Service.cs" />
+    <Compile Include="src\Domain\Entities\Service\ServiceItem.cs" />
+    <Compile Include="src\Domain\Entities\Service\ServiceOrder.cs" />
+    <Compile Include="src\Domain\Entities\User.cs" />
+    <Compile Include="src\Domain\Entities\Vehicle.cs" />
+    <Compile Include="src\Domain\Enums\PaymentMethod.cs" />
+    <Compile Include="src\Domain\Enums\PaymentStatus.cs" />
+    <Compile Include="src\Domain\Enums\Positions.cs" />
+    <Compile Include="src\Domain\Enums\ServiceOrderStatus.cs" />
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -73,6 +87,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Docs\Files\Diagram.drawio" />
     <None Include="src\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,13 +103,14 @@
     <None Include="src\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Docs\Files\" />
     <Folder Include="src\Domain\Entities\Configurations\" />
-    <Folder Include="src\Domain\Enums\" />
     <Folder Include="src\Domain\Services\" />
     <Folder Include="src\Infrastructure\Data\Context\" />
     <Folder Include="src\Infrastructure\External\" />
     <Folder Include="Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docs\Files\Diagram.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

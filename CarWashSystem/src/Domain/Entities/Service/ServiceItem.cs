@@ -11,7 +11,7 @@ namespace CarWashSystem.src.Domain.Entities.Service
         public ServiceItem(Service service, User employee, decimal chargedAmount)
         {
             Service = service ?? throw new ArgumentNullException(nameof(service));
-            Employee = employee ?? throw new ArgumentNullException(nameof(employee));
+            User = employee ?? throw new ArgumentNullException(nameof(employee));
             ChargedAmount = chargedAmount;
         }
 
@@ -24,8 +24,8 @@ namespace CarWashSystem.src.Domain.Entities.Service
         public virtual Service Service { get; set; }
 
 
-        public int EmployeeId { get; set; }
-        public virtual User Employee { get; set; }
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
 
 
         [Range(0.01, (double)decimal.MaxValue, ErrorMessage = "O valor cobrado deve ser positivo.")]

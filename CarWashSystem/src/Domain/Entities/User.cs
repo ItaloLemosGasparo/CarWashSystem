@@ -23,7 +23,7 @@ namespace CarWashSystem.src.Domain.Entities
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-
+        [Required]
         public Positions Position { get; set; }
 
 

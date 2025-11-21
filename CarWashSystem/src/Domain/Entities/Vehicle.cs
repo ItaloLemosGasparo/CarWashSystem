@@ -35,10 +35,12 @@ namespace CarWashSystem.src.Domain.Entities
 
 
         [Range(1900, 3000, ErrorMessage = "Ano de Fabricação inválido.")]
+        [Required]
         public int YearFab { get; set; }
 
 
         [Range(1900, 3000, ErrorMessage = "Ano do Modelo inválido.")]
+        [Required]
         public int YearModel { get; set; }
 
 

@@ -22,10 +22,10 @@ namespace CarWashSystem.src.Domain.Entities
         [DataType(DataType.Currency)]
         public decimal Total { get; set; }
 
+        
+        public PaymentMethod? PaymentMethod { get; set; }
 
-        public PaymentMethod PaymentMethod { get; set; }
-
-
+        [Required(ErrorMessage = "O status do pagamento é obrigatório.")]
         public PaymentStatus Status { get; set; }
 
 

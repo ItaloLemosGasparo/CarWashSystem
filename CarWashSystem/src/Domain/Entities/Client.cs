@@ -8,7 +8,7 @@ namespace CarWashSystem.src.Domain.Entities
     {
         public Client()
         {
-            PhoneNumbers = new List<ClientPhone>();
+            ClientPhones = new List<ClientPhone>();
             Vehicles = new List<Vehicle>();
         }
 
@@ -23,7 +23,7 @@ namespace CarWashSystem.src.Domain.Entities
 
 
         // 1:N
-        public virtual ICollection<ClientPhone> PhoneNumbers { get; set; }
+        public virtual ICollection<ClientPhone> ClientPhones { get; set; }
 
 
         // 1:N

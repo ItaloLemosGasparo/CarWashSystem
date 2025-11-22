@@ -29,7 +29,8 @@ namespace CarWashSystem.src.Domain.Entities.Service
 
 
         [Range(0.01, (double)decimal.MaxValue, ErrorMessage = "O valor cobrado deve ser positivo.")]
-        [DataType(DataType.Currency)]
+        [DataType(DataType.Currency, ErrorMessage = "O valor cobrado deve ser um valor monetário válido.")]
+        [Required(ErrorMessage = "O valor cobrado é obrigatório.")]
         public decimal ChargedAmount { get; set; }
     }
 }

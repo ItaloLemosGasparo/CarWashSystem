@@ -14,15 +14,6 @@ namespace CarWashSystem.src.Domain.Entities.Configurations
 
 
             // Relations
-            HasMany(user => user.PhoneNumbers)
-                .WithRequired(phone => phone.User)
-                .HasForeignKey(phone => phone.UserId)
-                .WillCascadeOnDelete(true); // * Cascade delete *
-
-            HasMany(user => user.ServiceItems)
-                .WithRequired(serviceItem => serviceItem.User)
-                .HasForeignKey(serviceItem => serviceItem.UserId)
-                .WillCascadeOnDelete(false); // * Cascade delete *
         }
     }
 }

@@ -19,7 +19,7 @@ namespace CarWashSystem.src.Domain.Entities
 
 
         [Range(0.00, (double)decimal.MaxValue, ErrorMessage = "O valor total não pode ser negativo.")]
-        [DataType(DataType.Currency)]
+        [DataType(DataType.Currency, ErrorMessage = "O valor total deve ser um valor monetário válido.")]
         public decimal Total { get; set; }
 
         

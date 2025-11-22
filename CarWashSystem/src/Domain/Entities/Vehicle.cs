@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarWashSystem.src.Domain.Entities.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -6,10 +7,13 @@ namespace CarWashSystem.src.Domain.Entities
 {
     public class Vehicle : BaseEntity, IValidatableObject
     {
-        public Vehicle() { }
+        public Vehicle()
+        {
+            ServiceOrders = new List<ServiceOrder>();
+        }
 
 
-        public Vehicle(Client client)
+        public Vehicle(Client client, ServiceOrder serviceOrder)
         {
             Client = client ?? throw new ArgumentNullException(nameof(client));
             ClientId = client.Id;
@@ -42,6 +46,8 @@ namespace CarWashSystem.src.Domain.Entities
         [Range(1900, 3000, ErrorMessage = "Ano do Modelo inválido.")]
         [Required]
         public int YearModel { get; set; }
+
+        public virtual ICollection<ServiceOrder> ServiceOrders { get; set; }
 
 
         // Business validations that can't be expressed as attributes

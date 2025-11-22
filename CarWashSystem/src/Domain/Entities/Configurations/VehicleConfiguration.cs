@@ -4,7 +4,8 @@ namespace CarWashSystem.src.Domain.Entities.Configurations
 {
     public class VehicleConfiguration : EntityTypeConfiguration<Vehicle>
     {
-        public VehicleConfiguration() { 
+        public VehicleConfiguration()
+        {
             ToTable("Vehicles");
 
             HasKey(vehicle => vehicle.Id);
@@ -17,7 +18,7 @@ namespace CarWashSystem.src.Domain.Entities.Configurations
             HasRequired(vehicle => vehicle.Client)
                 .WithMany(client => client.Vehicles)
                 .HasForeignKey(vehicle => vehicle.ClientId)
-                .WillCascadeOnDelete(false); // * Cascade delete *
+                .WillCascadeOnDelete(true);
         }
     }
 }

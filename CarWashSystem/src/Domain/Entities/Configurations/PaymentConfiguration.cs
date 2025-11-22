@@ -8,7 +8,15 @@ namespace CarWashSystem.src.Domain.Entities.Configurations
         {
             ToTable("Payments");
 
-            HasKey(c => c.Id);
+            HasKey(payment => payment.Id);
+
+            // properties
+
+
+            // relations
+            HasRequired(payment => payment.ServiceOrder)
+                .WithOptional(serviceOrder => serviceOrder.Payment)
+                .WillCascadeOnDelete(true);
         }
     }
 }

@@ -52,7 +52,7 @@ README.md   – Informações gerais do projeto
 
 ## Documentações Adicionais
 
-* [Introdução ao Entity Framework 6](CarWashSystem/Docs/EntityFramework/01_Introducao.md)
+* [Introdução ao Entity Framework 6](CarWashSystem/Docs/EntityFramework/01_Introducao.md)</br>
 ├── [01_Introducao.md](./01_Introducao.md) — este documento.</br>
 ├── [02_Modelos.md](./02_Modelos.md) — entidades, propriedades e convenções básicas.</br>
 ├── [03_Conventions.md](./03_Conventions.md) — convenções do EF6 (naming, chaves, relacionamentos automáticos).</br>

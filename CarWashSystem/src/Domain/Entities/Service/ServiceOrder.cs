@@ -37,7 +37,6 @@ namespace CarWashSystem.src.Domain.Entities.Service
         public ServiceOrderStatus ServiceOrderStatus { get; set; }
 
 
-        // Payment relation: a ServiceOrder may have one Payment
         public int? PaymentId { get; set; }
         public virtual Payment Payment { get; set; }
 

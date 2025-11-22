@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace CarWashSystem.src.Domain.Entities
 {
@@ -9,5 +10,7 @@ namespace CarWashSystem.src.Domain.Entities
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public DateTime? UpdatedAt { get; set; }
+
+        public bool IsDeleted { get; set; } = false;
     }
 }

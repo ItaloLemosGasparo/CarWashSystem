@@ -64,8 +64,13 @@
     </Compile>
     <Compile Include="src\Domain\Entities\BaseEntity.cs" />
     <Compile Include="src\Domain\Entities\Client.cs" />
-    <Compile Include="src\Domain\Entities\Configurations\ClienteConfiguration.cs" />
+    <Compile Include="src\Domain\Entities\Configurations\ClientConfiguration.cs" />
+    <Compile Include="src\Domain\Entities\Configurations\Phones\ClientPhoneConfiguration.cs" />
     <Compile Include="src\Domain\Entities\Configurations\PaymentConfiguration.cs" />
+    <Compile Include="src\Domain\Entities\Configurations\Phones\UserPhoneConfiguration.cs" />
+    <Compile Include="src\Domain\Entities\Configurations\Service\ServiceConfiguration.cs" />
+    <Compile Include="src\Domain\Entities\Configurations\Service\ServiceItemConfiguration.cs" />
+    <Compile Include="src\Domain\Entities\Configurations\Service\ServiceOrderConfiguration.cs" />
     <Compile Include="src\Domain\Entities\Configurations\UserConfiguration.cs" />
     <Compile Include="src\Domain\Entities\Configurations\VehicleConfiguration.cs" />
     <Compile Include="src\Domain\Entities\Payment.cs" />
@@ -92,6 +97,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Docs\EntityFramework\02_Modelos.md" />
+    <None Include="Docs\EntityFramework\03_Conventions.md" />
+    <None Include="Docs\EntityFramework\04_FluentAPI.md" />
+    <None Include="Docs\EntityFramework\04_FluentAPI\01_Configuracoes-Entidades.md" />
+    <None Include="Docs\EntityFramework\04_FluentAPI\02_Relacionamentos.md" />
+    <None Include="Docs\EntityFramework\04_FluentAPI\03_CascadeDelete.md" />
+    <None Include="Docs\EntityFramework\04_FluentAPI\04_Resumo-FluentAPI.md" />
+    <None Include="Docs\EntityFramework\05_Migrations.md" />
+    <None Include="Docs\EntityFramework\06_Initializers.md" />
+    <None Include="Docs\EntityFramework\07_LocalDB.md" />
+    <None Include="Docs\EntityFramework\08_Boas-Praticas.md" />
     <None Include="Docs\Files\Diagram.drawio" />
     <None Include="src\packages.config" />
     <None Include="Properties\Settings.settings">
@@ -114,6 +130,7 @@
     <Folder Include="Tests\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Docs\EntityFramework\01_Introducao.md" />
     <Content Include="Docs\Files\Diagram.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
